@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section id="login_page">
+		<form>
+			<input type="text" name="username" placeholder="Enter username" id="username"> 
+			<input type="password" name="password" placeholder="Enter password" id="password">
+			<input type="button" value="Login" onclick="login(username.value, password.value)">
+		</form>
+	</section>
+	<section id="realtime_todo_list">
+		<h1>Real Time To-do List</h1>
+		<table id="todo_list__table">
+			<thead>
+				<tr>
+					<td>
+						Task Name
+					</td>
+					<td>
+						Complete Task
+					</td>
+					<td>
+						Delete Task
+					</td>
+				</tr>
+			</thead>
+			<hr>
+			<tbody id="todo_list">
+				
+			</tbody>
+		</table>
+		<form>
+			<input type="text" name="new_task_name" id="new_task_name">
+			<input type="button" value="add +" onclick="addTask(new_task_name.value)" >
+		</form>
+	</section>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js">
+		
+	</script>
+	<script src="main.js">
+		
+	</script>
+	<script src="api.js">
+			
+	</script>
+</body>
+</html>

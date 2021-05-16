@@ -1,0 +1,25 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#realtime_todo_list {
+	background: #000;
+	color: white;
+	display: none;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+#todo_list__table {
+	border: 2px solid blue;
+	width: 100%;
+}
+
+#todo_list__table .completed {
+	background: green;
+}
+
+td {
+	border: 2px solid red;
+}
